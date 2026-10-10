@@ -900,6 +900,11 @@ button {
   color: var(--ink);
 }
 
+.work-shot figcaption a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .work-link {
   align-self: flex-start;
   min-height: 44px;
