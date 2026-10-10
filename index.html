@@ -3,284 +3,588 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hang Nguyen — Performance Marketing Portfolio</title>
-<meta name="description" content="Hang Nguyen — results-driven marketing leader with 5+ years across digital marketing, branding, project management and growth.">
+<title>Hang Nguyen — Marketing</title>
+<meta name="description" content="Hang Nguyen (Hailey) — growth and digital marketing leader in Ho Chi Minh City, co-founder of Alira Dancing Studio.">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="container">
-
+<div class="wrap">
   <header class="site-header">
-    <div class="logo">Hang Nguyen</div>
-    <nav class="site-nav">
+    <a href="#top" class="logo">Hang Nguyen</a>
+    <nav aria-label="Main" class="site-nav">
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="is-contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Performance marketing,<br><em>measured in outcomes.</em></h1>
-    <p class="hero-lede">Results-driven marketing leader with 5+ years across digital marketing, branding, project management and growth. I build funnels, run paid and organic channels, and lead the teams that ship them.</p>
-    <div class="hero-meta">
-      <span>Ho Chi Minh City</span>
-      <span>Available to hire</span>
-      <span><a href="mailto:hangngg.work@gmail.com">hangngg.work@gmail.com</a></span>
+  <section id="top" class="hero">
+    <div class="hero-copy">
+      <h1 id="headline-formal">Hang Nguyen is a <em>growth &amp; digital marketing</em> leader in Ho Chi Minh City</h1>
+      <h1 id="headline-casual" hidden>Hi, I’m Hailey. I get brands <em>found, clicked</em> and talked about.</h1>
+
+      <button type="button" id="voice-toggle" class="toggle-btn" aria-pressed="false">
+        <span class="toggle-dot" aria-hidden="true"></span>
+        <span id="voice-toggle-label">psst — the casual version</span>
+      </button>
+
+      <p class="hero-build">I build <span class="word" id="rotating-word">marketing funnels</span></p>
+
+      <p class="hero-lede">5+ years across digital marketing, branding, project management and growth. Co-founder of Alira Dancing Studio. Vietnamese. Based in Ho Chi Minh City. Available to hire.</p>
+
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-dark">See selected work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg>
+        </a>
+        <a href="mailto:hangngg.work@gmail.com" class="btn btn-outline">Say hello</a>
+      </div>
+    </div>
+
+    <figure class="hn-portrait" role="img" aria-label="Hailey’s Memoji sticker">
+      <div class="hn-sticker">
+        <img class="hn-face" src="assets/images/hailey-memoji.png" alt="">
+        <img class="hn-face-alt" src="assets/images/hailey-memoji-alt.png" alt="">
+      </div>
+      <span class="hn-portrait-caption">hi, I’m Hailey</span>
+    </figure>
+  </section>
+
+  <section aria-label="Brands I’ve worked with" class="hn-strip brands-strip">
+    <div class="hn-track slow">
+      <span class="brand-item">Alira Dancing Studio</span>
+      <span class="brand-item">Spartan</span>
+      <span class="brand-item">Golden Owl</span>
+      <span class="brand-item">Marketo Vietnam</span>
+      <span class="brand-item">Traderhub.net</span>
+      <span class="brand-item">tracnghiemtinhcach.vn</span>
+      <span class="brand-item">Ba Con Sói</span>
+      <span class="brand-item" aria-hidden="true">Alira Dancing Studio</span>
+      <span class="brand-item" aria-hidden="true">Spartan</span>
+      <span class="brand-item" aria-hidden="true">Golden Owl</span>
+      <span class="brand-item" aria-hidden="true">Marketo Vietnam</span>
+      <span class="brand-item" aria-hidden="true">Traderhub.net</span>
+      <span class="brand-item" aria-hidden="true">tracnghiemtinhcach.vn</span>
+      <span class="brand-item" aria-hidden="true">Ba Con Sói</span>
     </div>
   </section>
 
-  <div class="divider" role="presentation"></div>
+  <section class="wrap statement">
+    <p>I turn a fuzzy growth goal into funnels, campaigns and communities <span class="fade">that show up in the numbers.</span></p>
+  </section>
+</div>
+
+<section aria-label="Results" class="hn-strip metrics-strip">
+  <div class="hn-track" id="metrics-track"></div>
+</section>
+
+<div class="wrap">
+
+  <section class="section">
+    <h2>Highlights</h2>
+    <ul class="highlight-grid" style="margin-top:36px">
+      <li class="highlight-card mint">
+        <span class="highlight-eyebrow">Alira Dancing Studio · Co-founder</span>
+        <span class="highlight-stat">3 studios</span>
+        <span class="highlight-note">and 300+ students in a year</span>
+      </li>
+      <li class="highlight-card dark">
+        <span class="highlight-eyebrow dark-muted">Golden Owl · 5 months</span>
+        <span class="highlight-stat mint-text">20+</span>
+        <span class="highlight-note light">competitive keywords ranked in Google’s top 10</span>
+      </li>
+      <li class="highlight-card">
+        <span class="highlight-eyebrow muted">Google</span>
+        <span class="highlight-title">Digital Marketing &amp; <br>E-commerce Professional Certificate</span>
+      </li>
+      <li class="highlight-card">
+        <span class="highlight-eyebrow muted">BAC Training &amp; Consultancy</span>
+        <span class="highlight-title">Business Analytics Certification</span>
+      </li>
+      <li class="highlight-card">
+        <span class="highlight-eyebrow muted">English</span>
+        <span class="highlight-title">EF SET C1 Advanced · TOEIC 750</span>
+      </li>
+      <li class="highlight-card">
+        <span class="highlight-eyebrow muted">HCM University of Transportation · 2015–2019</span>
+        <span class="highlight-title">B.Eng, Sea Transportation Economics &amp; Logistics</span>
+      </li>
+    </ul>
+  </section>
 
   <section id="work" class="section">
     <div class="section-head">
       <h2>Selected work</h2>
-      <span class="section-count">06</span>
+      <span class="section-count">07 projects · 2021–2026</span>
     </div>
+
+    <nav aria-label="Work index" class="work-index">
+      <div class="work-index-row">
+        <span class="work-index-label">Founder</span>
+        <a href="#p-alira" class="chip is-active"><span>01</span>Alira Dancing Studio</a>
+      </div>
+      <div class="work-index-row">
+        <span class="work-index-label">Growth &amp; performance</span>
+        <a href="#p-traderhub" class="chip"><span>02</span>Traderhub.net</a>
+        <a href="#p-goldenowl" class="chip"><span>03</span>goldenowl.asia</a>
+        <a href="#p-tracnghiem" class="chip"><span>04</span>tracnghiemtinhcach.vn</a>
+      </div>
+      <div class="work-index-row">
+        <span class="work-index-label">Community</span>
+        <a href="#p-community" class="chip"><span>05</span>Trading community pages</a>
+      </div>
+      <div class="work-index-row">
+        <span class="work-index-label">Brand &amp; events</span>
+        <a href="#p-spartan" class="chip"><span>06</span>Life at Spartan</a>
+        <a href="#p-fair" class="chip"><span>07</span>Spartan x Bach Khoa Career Fair</a>
+      </div>
+    </nav>
 
     <div class="work-list">
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>01</span><span>05/2021 – 03/2022</span></div>
-          <h3>Traderhub.net</h3>
-          <p class="work-subtitle">Finance forum · Marketo Vietnam</p>
-          <div class="media-placeholder"><span>forum homepage screenshot</span></div>
-        </div>
-        <div class="work-content">
-          <p class="work-desc">Developed the idea and the entire plan to build a financial forum — working with an outsourced IT team on the platform and the internal team to bring users in, then running its communication, marketing, operation and advertising.</p>
+      <!-- 01 -->
+      <article id="p-alira" class="hn-card work-article is-featured">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-dark">Co-founder</span>
+            <span class="badge badge-mint">Now</span>
+            <span class="badge badge-neutral">2025 – 2026 · Ho Chi Minh City</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">01</span> · Alira Dancing Studio · Dance studio, 3 branches</p>
+          <h3>From one studio to three, and 300+ students in a year.</h3>
+          <p class="work-desc">I co-founded Alira and own its growth: the brand, the product students and teachers use every day, and the TikTok channels that keep new students coming in.</p>
+
+          <div class="product-grid">
+            <div class="product-tile"><span class="label">Product · web</span><span class="value">Website</span></div>
+            <div class="product-tile"><span class="label">Product · app</span><span class="value">Student app</span></div>
+            <div class="product-tile"><span class="label">Product · app</span><span class="value">Teacher app</span></div>
+          </div>
+          <p class="work-note">One booking system behind all three: students book classes and rent studio rooms.</p>
+
           <ul class="work-bullets">
-            <li>Organised two financial writing competitions to attract more users.</li>
-            <li>Sold article slots, banner placements and book advertising on the forum.</li>
+            <li>Grew the studio to 3 branches across Ho Chi Minh City.</li>
+            <li>Built several TikTok channels, each run on its own content plan.</li>
+            <li>Made TikTok content that went viral and brought in new students.</li>
+            <li>Shipped a website, a student app and a teacher app for bookings and room rental.</li>
+            <li>Opening a tourist channel: trial classes on travel platforms (in progress).</li>
           </ul>
           <dl class="stats">
-            <div><dt>Page views</dt><dd>45,348</dd></div>
-            <div><dt>New users</dt><dd>12,647</dd></div>
-            <div><dt>Income</dt><dd>50M VND</dd></div>
+            <div><dd>300+</dd><dt>students in a year</dt></div>
+            <div><dd>3</dd><dt>studios</dt></div>
+            <div><dd>3</dd><dt>products: web + 2 apps</dt></div>
+            <div><dd class="tbd">[X]</dd><dt>TikTok channels</dt></div>
+            <div><dd class="tbd">[X]M</dd><dt>views on the top video</dt></div>
+          </dl>
+        </div>
+        <div class="work-visual">
+          <div class="media-tile"><span>[Studio photo or app screenshots]</span></div>
+          <div class="tile-row">
+            <div class="media-tile tall"><span>[Viral TikTok #1]</span></div>
+            <div class="media-tile tall"><span>[TikTok #2]</span></div>
+            <div class="media-tile tall"><span>[TikTok #3]</span></div>
+          </div>
+          <span class="visual-note"><strong>On TikTok</strong> · drop in screenshots of your best-performing videos with their view counts.</span>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article id="p-traderhub" class="hn-card work-article single-col">
+        <div class="work-main narrow">
+          <div class="work-badges">
+            <span class="badge badge-mint">Launched</span>
+            <span class="badge badge-neutral">05/2021 – 03/2022 · Marketo Vietnam</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">02</span> · Traderhub.net · Finance forum</p>
+          <h3>A finance forum, from first idea to 50M VND in income.</h3>
+          <p class="work-desc">Developed the idea and the full plan, worked with an outsourced IT team on the platform and the internal team to bring users in, then ran its communication, marketing, operation and advertising.</p>
+          <ul class="work-bullets">
+            <li>Organised two financial writing competitions to attract users.</li>
+            <li>Sold article slots, banner placements and book advertising.</li>
+          </ul>
+          <dl class="stats cols-3">
+            <div><dd>45,348</dd><dt>page views</dt></div>
+            <div><dd>12,647</dd><dt>new users</dt></div>
+            <div><dd>50M ₫</dd><dt>income</dt></div>
           </dl>
         </div>
       </article>
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>02</span><span>02/2023 – 11/2023</span></div>
-          <h3>goldenowl.asia</h3>
-          <p class="work-subtitle">Company website · Technical SEO</p>
-          <div class="media-placeholder"><span>traffic graph or site screenshot</span></div>
-        </div>
-        <div class="work-content">
-          <p class="work-desc">Optimised technical SEO errors across the site, worked with freelance content creators to grow organic and paid traffic, and collaborated with designers and engineers to adjust content and improve the on-site experience.</p>
+      <!-- 03 -->
+      <article id="p-goldenowl" class="hn-card work-article">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-mint">SEO</span>
+            <span class="badge badge-neutral">02/2023 – 11/2023 · Golden Owl</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">03</span> · <a href="https://goldenowl.asia/" target="_blank" rel="noopener">goldenowl.asia</a> · Company website</p>
+          <h3>Technical SEO that put 20+ keywords in the top 10.</h3>
+          <p class="work-desc">Fixed technical SEO errors across the site, worked with freelance content creators to grow organic and paid traffic, and partnered with designers and engineers to improve the on-site experience.</p>
           <ul class="work-bullets">
-            <li>Improved website indexing and lifted SEM keyword rankings.</li>
+            <li>Better indexing and higher SEM keyword rankings.</li>
             <li>Consistent traffic growth over six months.</li>
-            <li>Generated new B2B leads.</li>
+            <li>New B2B leads for the business.</li>
+            <li>Built the keyword and content plan: topic clusters for web development, UI/UX, automation testing and app development.</li>
           </ul>
-          <dl class="stats">
-            <div><dt>Page views</dt><dd>15,355</dd></div>
-            <div><dt>Impressions</dt><dd>6,452</dd></div>
-            <div><dt>Keywords top 10</dt><dd>20+</dd></div>
+          <dl class="stats cols-3">
+            <div><dd>15,355</dd><dt>page views</dt></div>
+            <div><dd>6,452</dd><dt>impressions</dt></div>
+            <div><dd>20+</dd><dt>keywords top 10</dt></div>
           </dl>
+          <a href="https://goldenowl.asia/" target="_blank" rel="noopener" class="work-link">Visit goldenowl.asia
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
         </div>
+        <figure class="work-shot">
+          <div class="work-shot-frame scroll">
+            <img src="assets/images/goldenowl-keyword-plan.png" alt="Golden Owl keyword and content plan in Google Sheets: topic clusters for web development, automation testing, UI/UX design and application development, with search volume, keyword difficulty, intent and publishing status for each article">
+          </div>
+          <figcaption><strong>Keyword &amp; content plan</strong><span>Each cluster pairs one landing page with supporting blogs, scored by volume, KD and intent.</span></figcaption>
+        </figure>
       </article>
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>03</span><span>02/2023 – 11/2023</span></div>
-          <h3>tracnghiemtinhcach.vn</h3>
-          <p class="work-subtitle">Product launch · Lead generation</p>
-          <div class="media-placeholder"><span>landing page screenshot</span></div>
-        </div>
-        <div class="work-content">
-          <p class="work-desc">Reviewed content and design ahead of the build, then planned and ran the communication and marketing activity that brought users to the product — including partnerships with businesses that needed it.</p>
-          <ul class="work-bullets">
-            <li>Over 1,500 email sign-ups from communication and advertising.</li>
-            <li>Two B2B leads on a 1M VND monthly budget.</li>
-          </ul>
-          <dl class="stats">
-            <div><dt>Reach</dt><dd>32,555</dd></div>
-            <div><dt>Email sign-ups</dt><dd>1,500</dd></div>
-            <div><dt>Organic engagement</dt><dd>3,470</dd></div>
+      <!-- 04 -->
+      <article id="p-tracnghiem" class="hn-card work-article">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-mint">Product launch</span>
+            <span class="badge badge-neutral">02/2023 – 11/2023</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">04</span> · <a href="https://tracnghiemtinhcach.vn/" target="_blank" rel="noopener">tracnghiemtinhcach.vn</a> · Lead generation</p>
+          <h3>1,500 sign-ups and two B2B leads on a 1M VND monthly budget.</h3>
+          <p class="work-desc">Reviewed content and design before the build, then planned and ran the communication and marketing that brought users to the product, including partnerships with businesses that needed it.</p>
+          <dl class="stats cols-3">
+            <div><dd>32,555</dd><dt>reach</dt></div>
+            <div><dd>1,500</dd><dt>email sign-ups</dt></div>
+            <div><dd>3,470</dd><dt>organic engagement</dt></div>
           </dl>
+          <a href="https://tracnghiemtinhcach.vn/" target="_blank" rel="noopener" class="work-link">Visit tracnghiemtinhcach.vn
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
         </div>
+        <figure class="work-shot">
+          <div class="work-shot-frame">
+            <img src="assets/images/tracnghiemtinhcach-homepage.png" alt="tracnghiemtinhcach.vn homepage: headline inviting visitors to discover their potential, buttons to take the DISC test or an IQ test, and a banner for a free 9-minute DISC test">
+          </div>
+          <figcaption><strong>Homepage</strong><span>DISC and IQ personality tests, free to start.</span></figcaption>
+        </figure>
       </article>
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>04</span><span>2021 – 2023</span></div>
-          <h3>Trading community pages</h3>
-          <p class="work-subtitle">Ba Con Sói · Tập đoàn gồng lỗ</p>
-          <div class="media-placeholder"><span>page insights screenshot</span></div>
-        </div>
-        <div class="work-content">
+      <!-- 05 -->
+      <article id="p-community" class="hn-card work-article">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-mint">Community</span>
+            <span class="badge badge-neutral">2021 – 2023</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">05</span> · <a href="https://www.facebook.com/baconsoiduide" target="_blank" rel="noopener">Ba Con Sói</a> · Tập đoàn gồng lỗ</p>
+          <h3>Two trading fan pages, 200,000+ likes between them.</h3>
           <p class="work-desc">Built and grew two finance and trading fan pages: content strategy, a posting calendar across formats, and advertisement booking as a revenue line.</p>
-          <dl class="stats">
-            <div><dt>Ba Con Sói likes</dt><dd>110,000</dd></div>
-            <div><dt>Gồng lỗ likes</dt><dd>96,000</dd></div>
-            <div><dt>Ad bookings</dt><dd>12M VND</dd></div>
+          <dl class="stats cols-3">
+            <div><dd>110,000</dd><dt>Ba Con Sói likes</dt></div>
+            <div><dd>96,000</dd><dt>Gồng lỗ likes</dt></div>
+            <div><dd>12M ₫</dd><dt>ad bookings</dt></div>
+          </dl>
+          <a href="https://www.facebook.com/baconsoiduide" target="_blank" rel="noopener" class="work-link">Visit Ba Con Sói on Facebook
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+        <figure class="work-shot">
+          <div class="work-shot-frame">
+            <img src="assets/images/baconsoi-facebook.png" alt="Ba Con Sói Facebook page: an illustrated cover of three cartoon wolves with coins, charts and an upward arrow, and the page header showing 144K followers and the tagline about keeping investing fresh with funny content">
+          </div>
+          <figcaption><strong>Ba Con Sói on Facebook</strong><span>Investing news, told through humour.</span></figcaption>
+        </figure>
+      </article>
+
+      <!-- 06 -->
+      <article id="p-spartan" class="hn-card work-article">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-mint">Employer brand</span>
+            <span class="badge badge-neutral">2024 – 2025 · Spartan</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">06</span> · Life at Spartan · Internal branding</p>
+          <h3>Company culture, told from the inside.</h3>
+          <p class="work-desc">Developed and managed the “Life at Spartan” fanpage, showing culture, employee experiences and team wins through photos, video, testimonials, behind-the-scenes stories and interactive posts.</p>
+          <dl class="stats cols-2">
+            <div><dd>300</dd><dt>employees at the company party</dt></div>
+            <div><dd>150</dd><dt>CVs from a job fair</dt></div>
           </dl>
         </div>
+        <figure class="work-shot">
+          <img class="plain" src="assets/images/spartan-fanpage.jpg" alt="Life At Spartans Facebook page: a photo grid of Mid-Autumn Festival gifts and team photos in the office, next to a post announcing Spartan’s booth at Bach Khoa Career Day 2024">
+          <figcaption><strong>Life At Spartans fanpage</strong><span>Mid-Autumn gifts, office moments and event posts.</span></figcaption>
+        </figure>
       </article>
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>05</span><span>2024 – 2025</span></div>
-          <h3>Life at Spartan</h3>
-          <p class="work-subtitle">Internal branding · Employer brand</p>
-          <div class="media-placeholder"><span>fanpage grid or event photo</span></div>
+      <!-- 07 -->
+      <article id="p-fair" class="hn-card work-article">
+        <div class="work-main">
+          <div class="work-badges">
+            <span class="badge badge-mint">Event</span>
+            <span class="badge badge-neutral">2024 · Spartan</span>
+          </div>
+          <p class="work-eyebrow"><span class="idx">07</span> · Spartan x Bach Khoa Career Fair · Recruitment</p>
+          <h3>A career fair booth, planned end to end.</h3>
+          <p class="work-desc">Creative concept, objectives and audience, budget and timeline, then logistics: suppliers, signage, backdrops and giveaway sets, plus invitations, registration lists and fanpage content.</p>
         </div>
-        <div class="work-content">
-          <p class="work-desc">Developed and managed the “Life at Spartan” fanpage, showcasing company culture, employee experiences and team achievements through photos, video, testimonials, behind-the-scenes stories and interactive posts.</p>
-          <ul class="work-bullets">
-            <li>Hosted a company party for 300 employees.</li>
-            <li>Ran a job fair that collected 150 CVs for the recruitment team.</li>
-          </ul>
-        </div>
+        <figure class="work-shot">
+          <img class="plain square" src="assets/images/spartan-fair-booth.jpg" alt="A six-photo collage of the Spartan team and students at the Spartan x Bach Khoa career fair booth, with links to the company website, Facebook and LinkedIn">
+          <figcaption><strong>At the booth</strong><span>Spartan x Bach Khoa career fair recap.</span></figcaption>
+        </figure>
       </article>
 
-      <article class="work-item">
-        <div class="work-media">
-          <div class="meta-row"><span>06</span><span>2024</span></div>
-          <h3>Spartan x Bach Khoa Career Fair</h3>
-          <p class="work-subtitle">Event marketing · Recruitment</p>
-          <div class="media-placeholder"><span>booth photo</span></div>
-        </div>
-        <div class="work-content">
-          <p class="work-desc">Owned the plan end to end: creative concept, objectives and audience, budget and timeline, then logistics — booking suppliers, signage, backdrops and giveaway sets — plus invitations, registration lists and fanpage content.</p>
-        </div>
-      </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <h2>How I work</h2>
+    <p class="section-lede">The same four steps, whether it’s a B2B website or a dance studio.</p>
+    <ol class="step-grid">
+      <li class="step-card">
+        <span class="step-tag">01 · Research</span>
+        <span class="step-title">Find the audience and the gap</span>
+        <span class="step-desc">Keyword research, competitor checks and audience notes before anything gets made.</span>
+        <span class="step-example">e.g. Golden Owl keyword plan</span>
+      </li>
+      <li class="step-card">
+        <span class="step-tag">02 · Plan</span>
+        <span class="step-title">Build the funnel and the calendar</span>
+        <span class="step-desc">Channels, budget, content plan and the one number each stage has to move.</span>
+        <span class="step-example">e.g. Alira TikTok content plans</span>
+      </li>
+      <li class="step-card">
+        <span class="step-tag">03 · Launch</span>
+        <span class="step-title">Ship content, ads and events</span>
+        <span class="step-desc">Campaigns, posts, landing pages and booths, run with designers, devs and partners.</span>
+        <span class="step-example">e.g. Spartan x Bach Khoa booth</span>
+      </li>
+      <li class="step-card">
+        <span class="step-tag">04 · Measure</span>
+        <span class="step-title">Read the numbers, then iterate</span>
+        <span class="step-desc">A/B tests, rankings and lead counts decide what gets more budget next month.</span>
+        <span class="step-example">e.g. Golden Owl ad creative tests</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2 style="margin-bottom:32px">Channels I’ve run</h2>
+    <ul class="channel-list">
+      <li><span class="who">TikTok organic</span><span class="where">Alira</span></li>
+      <li><span class="who">Facebook pages &amp; groups</span><span class="where">Ba Con Sói, Marketo, Spartan</span></li>
+      <li><span class="who">SEO</span><span class="where">Golden Owl, Spartan</span></li>
+      <li><span class="who">Paid social &amp; search</span><span class="where">Facebook, Google, TikTok, Zalo, Ad-micro</span></li>
+      <li><span class="who">App marketing</span><span class="where">Apple Search Ads, Google UAC</span></li>
+      <li><span class="who">Email</span><span class="where">Spartan, tracnghiemtinhcach.vn</span></li>
+      <li><span class="who">B2B listings &amp; PR</span><span class="where">Clutch, PR bookings</span></li>
+      <li><span class="who">Events &amp; employer brand</span><span class="where">Spartan</span></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Building with people</h2>
+    <p class="section-lede">Communities, events and rooms full of people: the part of marketing that happens away from the dashboard.</p>
+    <ul class="people-grid">
+      <li class="people-card">
+        <span class="people-tag">Alira Dancing Studio</span>
+        <span class="people-stat">300+</span>
+        <span class="people-note">students dancing with us in a year, across 3 studios</span>
+      </li>
+      <li class="people-card">
+        <span class="people-tag">Marketo Vietnam</span>
+        <span class="people-stat">50,000+</span>
+        <span class="people-note">group members in a single month</span>
+      </li>
+      <li class="people-card">
+        <span class="people-tag">Spartan</span>
+        <span class="people-stat">300</span>
+        <span class="people-note">employees at a company party I hosted</span>
+      </li>
+      <li class="people-card">
+        <span class="people-tag">Spartan x Bach Khoa</span>
+        <span class="people-stat">150 CVs</span>
+        <span class="people-note">collected for the recruitment team at a job fair</span>
+      </li>
+      <li class="people-card">
+        <span class="people-tag">Traderhub.net</span>
+        <span class="people-stat">2</span>
+        <span class="people-note">financial writing competitions organised</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 style="margin-bottom:32px">Kind words</h2>
+    <div class="quote-grid">
+      <figure class="quote-card">
+        <svg width="36" height="28" viewBox="0 0 36 28" fill="#8eebc4" aria-hidden="true"><path d="M0 28V16C0 7 5 1.5 14 0l1.6 3.6C10.4 5 8 8.4 7.7 13H14v15H0zm20 0V16c0-9 5-14.5 14-16l1.6 3.6C30.4 5 28 8.4 27.7 13H34v15H20z"></path></svg>
+        <blockquote lang="vi">Hằng giỏi lắm, đừng bỏ nghề nha.</blockquote>
+        <p class="quote-translation">“You’re really good at this. Don’t ever leave the field.”</p>
+        <figcaption>A former manager, in a message to me · <span class="fade">[Name, Company]</span></figcaption>
+      </figure>
+      <figure class="quote-card placeholder">
+        <blockquote>“[A quote from a teammate, partner or Alira student.]”</blockquote>
+        <figcaption>[Name] · [Role, Company]</figcaption>
+      </figure>
     </div>
   </section>
 
   <section id="experience" class="section">
-    <div class="section-head">
-      <h2>Experience</h2>
-    </div>
-    <div class="exp-list">
-
-      <div class="exp-row">
-        <div class="exp-date">Apr 2025 — now</div>
+    <h2 style="margin-bottom:32px">Experience</h2>
+    <ol class="exp-list">
+      <li class="exp-row">
+        <span class="exp-date">2025 — now</span>
         <div class="exp-body">
-          <div class="exp-role">Freelance marketing consultant</div>
-          <div class="exp-summary">Brand marketing, SEO and paid channels for SME clients</div>
-        </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-date">Jan 2024 — Apr 2025</div>
-        <div class="exp-body">
-          <div class="exp-role">Digital Marketing Leader · <span class="exp-company">Spartan</span></div>
+          <span class="exp-role">Co-founder · <span class="exp-company">Alira Dancing Studio</span></span>
           <ul class="exp-bullets">
-            <li>Growth-focused marketing strategies driving brand positioning and direct sales.</li>
-            <li>Multi-channel programme across SEO, SEM, email, social and Clutch.</li>
-            <li>Brought 3–5 organic leads a month to business development with no paid ads.</li>
+            <li>Grew the studio to 3 branches and 300+ students in a year.</li>
+            <li>Built a website, a student app and a teacher app for class booking and room rental.</li>
+            <li>Built several TikTok channels on content plans, with videos that went viral.</li>
           </ul>
         </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-date">Feb 2023 — Dec 2023</div>
+      </li>
+      <li class="exp-row">
+        <span class="exp-date">Apr 2025 — now</span>
         <div class="exp-body">
-          <div class="exp-role">Marketing Leader · <span class="exp-company">Golden Owl</span></div>
+          <span class="exp-role">Freelance marketing consultant</span>
+          <span class="exp-summary">Brand marketing, SEO and paid channels for SME clients.</span>
+        </div>
+      </li>
+      <li class="exp-row">
+        <span class="exp-date">Jan 2024 — Apr 2025</span>
+        <div class="exp-body">
+          <span class="exp-role">Digital Marketing Leader · <span class="exp-company">Spartan</span></span>
           <ul class="exp-bullets">
-            <li>Performance campaigns on Apple Search Ads and Google UAC to improve install-to-retention.</li>
-            <li>Ranked 20+ competitive keywords in the top 10 within four months.</li>
+            <li>Growth-focused strategies driving brand positioning and direct sales.</li>
+            <li>Multi-channel programme across SEO, SEM, email, social and Clutch.</li>
+            <li>3–5 organic leads a month to business development, no paid ads.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="exp-row">
+        <span class="exp-date">Feb 2023 — Dec 2023</span>
+        <div class="exp-body">
+          <span class="exp-role">Marketing Leader · <span class="exp-company">Golden Owl</span></span>
+          <ul class="exp-bullets">
+            <li>Apple Search Ads and Google UAC campaigns to improve install-to-retention.</li>
+            <li>20+ competitive keywords in the top 10 within four months.</li>
             <li>A/B tested ad creatives and store assets to lift click-through and conversion.</li>
           </ul>
         </div>
-      </div>
-
-      <div class="exp-row">
-        <div class="exp-date">Jul 2020 — Jan 2023</div>
+      </li>
+      <li class="exp-row">
+        <span class="exp-date">Jul 2020 — Jan 2023</span>
         <div class="exp-body">
-          <div class="exp-role">Marketing Executive → Senior · <span class="exp-company">Marketo Vietnam</span></div>
+          <span class="exp-role">Marketing Executive → Senior · <span class="exp-company">Marketo Vietnam</span></span>
           <ul class="exp-bullets">
-            <li>Built marketing funnels, brand guidelines and content plans for client brands in Vietnam.</li>
-            <li>Ran ads across Facebook, Google, Ad-micro, Zalo and TikTok on budgets over 1B VND a month.</li>
-            <li>Earned 100M VND from PR bookings; grew a group past 50,000 members in one month.</li>
+            <li>Marketing funnels, brand guidelines and content plans for client brands.</li>
+            <li>Ads across Facebook, Google, Ad-micro, Zalo and TikTok on 1B+ VND monthly budgets.</li>
+            <li>100M VND from PR bookings; grew a group past 50,000 members in one month.</li>
           </ul>
         </div>
-      </div>
-
-      <div class="exp-row exp-row--last">
-        <div class="exp-date">2018 — 2022</div>
+      </li>
+      <li class="exp-row">
+        <span class="exp-date">2018 — 2022</span>
         <div class="exp-body">
-          <div class="exp-role">Freelance content creator</div>
-          <div class="exp-summary">Brand marketing, content and SEO writing across F&amp;B, beauty, spa and tourism</div>
+          <span class="exp-role">Freelance content creator</span>
+          <span class="exp-summary">Brand content and SEO writing across F&amp;B, beauty, spa and tourism.</span>
         </div>
-      </div>
-
-    </div>
+      </li>
+    </ol>
   </section>
 
   <section id="about" class="section about-section">
-    <div class="about-media">
+    <div class="about-intro">
       <h2>About</h2>
-      <div class="media-placeholder media-placeholder--portrait"><span>portrait</span></div>
+      <p>I’m Hang Nguyen, also known as Hailey. I studied maritime economics and logistics at the University of Transport Ho Chi Minh City, then switched to marketing in my second year: writing for SME brands, running fan pages, and editing content for entertainment companies. In 2025 I co-founded Alira Dancing Studio, where I get to test every idea on a business of my own.</p>
     </div>
-    <div class="about-content">
-      <p class="about-lede">I'm Hang Nguyen, also known as Hailey. I graduated from the University of Transport Ho Chi Minh City with a major in maritime economics and logistics. Since my second year I shifted to marketing and started in content roles — writing for SME brands, managing fan page channels, and working as a contributor and content editor at entertainment companies.</p>
-
+    <div class="about-groups">
       <div class="about-group">
         <h3>Skills</h3>
         <div class="pill-list">
-          <span class="pill">Strategic planning</span>
-          <span class="pill">Campaign optimisation</span>
-          <span class="pill">SEO &amp; ASO</span>
-          <span class="pill">Paid media</span>
-          <span class="pill">Branding &amp; creative</span>
-          <span class="pill">Project management</span>
-          <span class="pill">Team leadership</span>
+          <span class="pill mint">Strategic planning</span>
+          <span class="pill mint">Campaign optimisation</span>
+          <span class="pill mint">SEO &amp; ASO</span>
+          <span class="pill mint">Paid media</span>
+          <span class="pill mint">Branding &amp; creative</span>
+          <span class="pill mint">Project management</span>
+          <span class="pill mint">Team leadership</span>
+          <span class="pill mint">TikTok &amp; short-form video</span>
+          <span class="pill mint">Content planning</span>
+          <span class="pill mint">Product &amp; app launches</span>
+          <span class="pill mint">Community building</span>
+          <span class="pill mint">Founder mindset</span>
         </div>
       </div>
-
       <div class="about-group">
         <h3>Tools</h3>
         <div class="pill-list">
-          <span class="pill">Google Analytics</span>
-          <span class="pill">SEMrush</span>
-          <span class="pill">Ahrefs</span>
-          <span class="pill">WordPress</span>
-          <span class="pill">Mailchimp</span>
-          <span class="pill">Figma</span>
-          <span class="pill">Photoshop</span>
-          <span class="pill">Canva</span>
-        </div>
-      </div>
-
-      <div class="about-group">
-        <h3>Education</h3>
-        <div class="edu-list">
-          <div>HCM University of Transportation — Bachelor of Engineering, Sea Transportation Economics &amp; Logistics <span class="muted">(2015–2019)</span></div>
-          <div>Google Digital Marketing &amp; E-commerce Professional Certificate</div>
-          <div>Business Analytics Certification — BAC Training &amp; Consultancy</div>
-          <div>TOEIC 750 · EF SET C1 Advanced</div>
+          <span class="pill outline">Google Analytics</span>
+          <span class="pill outline">SEMrush</span>
+          <span class="pill outline">Ahrefs</span>
+          <span class="pill outline">WordPress</span>
+          <span class="pill outline">Mailchimp</span>
+          <span class="pill outline">Figma</span>
+          <span class="pill outline">Photoshop</span>
+          <span class="pill outline">Canva</span>
+          <span class="pill outline">Meta Ads Manager</span>
+          <span class="pill outline">Google Ads</span>
+          <span class="pill outline">TikTok Ads</span>
+          <span class="pill outline">Zalo Ads</span>
+          <span class="pill outline">Apple Search Ads</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="contact-block">
-      <h2>Open to new work.</h2>
-      <div class="contact-links">
-        <a href="mailto:hangngg.work@gmail.com">hangngg.work@gmail.com</a>
+  <section id="contact" class="section" style="padding-top:136px">
+    <div class="contact-card">
+      <h2>Want to get in touch? <em>Drop me a line.</em></h2>
+      <div class="contact-actions">
+        <a href="mailto:hangngg.work@gmail.com" class="btn-light">hangngg.work@gmail.com</a>
+        <button type="button" id="copy-email" class="copy-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>
+          <span id="copy-email-label">Copy email</span>
+        </button>
+      </div>
+      <div class="contact-prompt">
+        <span class="label">Not sure what to say? Start here.</span>
+        <div class="question-row">
+          <a class="question-chip" href="mailto:hangngg.work@gmail.com?subject=Question%3A%20how%20did%20Alira%20grow%20to%203%20studios%3F">Ask me how Alira grew to 3 studios</a>
+          <a class="question-chip" href="mailto:hangngg.work@gmail.com?subject=Question%3A%20how%20did%20you%20rank%2020%2B%20keywords%20in%20the%20top%2010%3F">Ask me how I ranked 20+ keywords in four months</a>
+          <a class="question-chip" href="mailto:hangngg.work@gmail.com?subject=Question%3A%20how%20did%20a%20group%20grow%20past%2050%2C000%20members%20in%20a%20month%3F">Ask me how a group hit 50,000 members in a month</a>
+          <a class="question-chip" href="mailto:hangngg.work@gmail.com?subject=Question%3A%20how%20did%20you%20get%201%2C500%20sign-ups%20on%201M%20VND%20a%20month%3F">Ask me how 1M VND a month got 1,500 sign-ups</a>
+        </div>
+      </div>
+      <div class="contact-meta">
         <a href="tel:+84909668261">(+84) 909 668 261</a>
         <a href="http://portfolio.hangoi.life/">portfolio.hangoi.life</a>
+        <span class="loc">Ho Chi Minh City, Vietnam</span>
       </div>
-      <div class="contact-location">Ho Chi Minh City, Vietnam</div>
     </div>
   </section>
+
+  <footer class="site-footer">
+    <span>Thanks for stopping by. Talk soon. <em>Hailey</em></span>
+    <nav aria-label="Footer" class="footer-nav">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#top">Back to top</a>
+    </nav>
+  </footer>
 
 </div>
 
+<script src="js/main.js"></script>
 </body>
 </html>
