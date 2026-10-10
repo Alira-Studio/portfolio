@@ -692,6 +692,77 @@ button {
   font-weight: 600;
 }
 
+.product-tile .desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--body);
+}
+
+.visual-title {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.app-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 230px));
+  gap: 12px;
+}
+
+.app-shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.studio-gallery {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+  gap: 10px;
+}
+
+.studio-shot {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 3 / 4;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.studio-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.studio-shot figcaption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink);
+}
+
 .work-note {
   font-size: 14px;
   color: var(--muted);
@@ -827,6 +898,11 @@ button {
   font-family: var(--font-mono);
   font-weight: 400;
   color: var(--ink);
+}
+
+.work-shot figcaption a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .work-link {
