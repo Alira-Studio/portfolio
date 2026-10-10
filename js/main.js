@@ -45,7 +45,7 @@
     var copyTimer;
     copyBtn.addEventListener("click", function () {
       try {
-        navigator.clipboard && navigator.clipboard.writeText("hangngg.work@gmail.com");
+        navigator.clipboard && navigator.clipboard.writeText("hang.nguyen.srp@gmail.com");
       } catch (e) {}
       copyLabel.textContent = "Copied";
       clearTimeout(copyTimer);
