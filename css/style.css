@@ -708,6 +708,20 @@ button {
   color: var(--muted);
 }
 
+.app-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 230px));
+  gap: 12px;
+}
+
+.app-shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
 .studio-gallery {
   grid-column: 1 / -1;
   display: flex;
